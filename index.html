@@ -23,10 +23,12 @@
   <div class="todo-wrapper">
     <div class="todo-header">
       <h3>Todos</h3>
-      <button @click="hideCompleted = !hideCompleted">Toggle completed</button>
+      <div class="todo-menu">
+      <button @click="toggleCompleted" :title="toggleCompletedTitle">{{ toggleCompletedText }}</button>
       <form id="searchForm">
         <input v-model="searchInput" type="text" placeholder="Search todo">
       </form>
+      </div>
     </div>
   <ul>
     <li v-for="todo in  filteredTodo" class="todo">

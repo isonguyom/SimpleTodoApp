@@ -8,6 +8,7 @@
 
 body {
     padding: 20px 7%;
+    background-color: #b0b4c6;
 }
 
 #newTodoForm {
@@ -41,6 +42,20 @@ button.create-btn {
     justify-content: space-between;
     align-items: center;
     flex-flow: wrap;
+}
+
+.todo-menu {
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.todo-menu button {
+    margin-right: 5px;
+    padding: 3px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 #searchForm input {
