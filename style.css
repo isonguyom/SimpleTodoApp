@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px 7%;
+}
+
+#newTodoForm {
+    margin-top: 20px;
+}
+
+#newTodoForm input {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    border-right: none;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+button.create-btn {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    cursor: pointer;
+}
+
+.todo-wrapper {
+    margin-top: 40px;
+}
+
+.todo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+#searchForm input {
+    padding: 3px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    border-right: none;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+button.search-btn {
+    padding: 3px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    cursor: pointer;
+}
+
+ul {
+    margin-top: 15px;
+    position: relative;
+    list-style: none;
+}
+
+.todo {
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(223, 221, 221);
+    position: relative;
+}
+
+.todo .todo-id {
+    margin-right: 20px;
+}
+
+.todo #todoText {
+    padding-left: 7px;
+}
+
+.todo .delete-btn {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    padding: 3px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.completed {
+    opacity: 0.6;
+}
