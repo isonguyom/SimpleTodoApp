@@ -47,19 +47,8 @@ button.create-btn {
     padding: 3px;
     border: 1px solid gray;
     border-radius: 4px;
-    border-right: none;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
 }
 
-button.search-btn {
-    padding: 3px;
-    border: 1px solid gray;
-    border-radius: 4px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    cursor: pointer;
-}
 
 ul {
     margin-top: 15px;

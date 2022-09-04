@@ -13,22 +13,23 @@
 <div id="app">
   <h1 class="title">{{ pageTitle }}</h1>
 
+ 
   <form @submit.prevent="createTodo" id="newTodoForm">
-    <input v-model="newTodo" type="text" name="newtodo" id="newTodo" placeholder="Create a new todo">
+    <input v-model="newTodo" type="text" name="newtodo" id="newTodo" placeholder="Create a new todo" required>
     <button type="submit" class="create-btn">Create</button>
   </form>
-  <div class=""></div>
+  <!-- <div v-else class="create-tip">{{ createTip }}</div> -->
 
   <div class="todo-wrapper">
     <div class="todo-header">
       <h3>Todos</h3>
+      <button @click="hideCompleted = !hideCompleted">Toggle completed</button>
       <form id="searchForm">
-        <input type="text" placeholder="Search todo">
-        <button class="search-btn">Search</button>
+        <input v-model="searchInput" type="text" placeholder="Search todo">
       </form>
     </div>
   <ul>
-    <li v-for="todo in todos" class="todo">
+    <li v-for="todo in  filteredTodo" class="todo">
       <span class="todo-id">{{ todo.id }}</span>
       <input type="checkbox" v-model="todo.completed">
       <span id="todoText" :class="{completed: todo.completed }">{{ todo.text }}</span>
