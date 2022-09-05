@@ -7,34 +7,50 @@
 }
 
 body {
-    padding: 20px 7%;
-    background-color: #b0b4c6;
+    padding: 40px 7%;
+    /* background-color: #b0b4c6; */
+    background: rgb(108,114,143);
+    background: linear-gradient(69deg, rgba(108,114,143,1) 19%, rgba(71,75,95,0.9023984593837535) 97%);
+    color: #fff;
+}
+
+button {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #A06071;
+    color: #fff;
+}
+
+input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #803F50;
 }
 
 #newTodoForm {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 #newTodoForm input {
     padding: 10px;
-    border: 1px solid gray;
-    border-radius: 4px;
-    border-right: none;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
 }
 
 button.create-btn {
     padding: 10px;
-    border: 1px solid gray;
-    border-radius: 4px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
-    cursor: pointer;
 }
 
 .todo-wrapper {
-    margin-top: 40px;
+    margin-top: 45px;
 }
 
 .todo-header {
@@ -52,16 +68,6 @@ button.create-btn {
 
 .todo-menu button {
     margin-right: 5px;
-    padding: 3px;
-    border: 1px solid gray;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#searchForm input {
-    padding: 3px;
-    border: 1px solid gray;
-    border-radius: 4px;
 }
 
 
@@ -88,12 +94,14 @@ ul {
 .todo .delete-btn {
     position: absolute;
     right: 0;
-    cursor: pointer;
-    padding: 3px;
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+}
+
+.todo .delete-btn:hover {
     background-color: red;
     color: white;
-    border: none;
-    border-radius: 4px;
 }
 
 .completed {
