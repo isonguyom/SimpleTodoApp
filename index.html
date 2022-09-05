@@ -15,14 +15,13 @@
 
  
   <form @submit.prevent="createTodo" id="newTodoForm">
-    <input v-model="newTodo" type="text" name="newtodo" id="newTodo" placeholder="Create a new todo" required>
+    <input v-model="newTodo" type="text" name="newtodo" id="newTodo" placeholder="Create a new task" required>
     <button type="submit" class="create-btn">Create</button>
   </form>
-  <!-- <div v-else class="create-tip">{{ createTip }}</div> -->
 
   <div class="todo-wrapper">
     <div class="todo-header">
-      <h3>Todos</h3>
+      <h3>Tasks</h3>
       <div class="todo-menu">
       <button @click="toggleCompleted" :title="toggleCompletedTitle">{{ toggleCompletedText }}</button>
       <form id="searchForm">

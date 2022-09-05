@@ -5,7 +5,6 @@ createApp({
   data() {
     return {
       pageTitle: 'Simple Todo App',
-      createTip: "Input a task to create a todo",
       searchInput: "",
       hideCompleted: false,
       toggleCompletedText: "Hide completed",
