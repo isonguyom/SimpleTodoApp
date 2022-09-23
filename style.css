@@ -8,10 +8,12 @@
 
 body {
     padding: 40px 7%;
-    /* background-color: #b0b4c6; */
-    background: rgb(108,114,143);
-    background: linear-gradient(69deg, rgba(108,114,143,1) 19%, rgba(71,75,95,0.9023984593837535) 97%);
+    background-color: #b0b4c6;
+    min-height: 100vh;
+    background-color: green;
+    background-image: linear-gradient(rgb(122, 129, 163), rgb(87, 93, 121), rgb(52, 57, 82), rgb(87, 93, 121), rgb(122, 129, 163));
     color: #fff;
+    font-size: 20px;
 }
 
 button {
